@@ -1,0 +1,146 @@
+* {
+  font-family: "Roboto", "GenWeb", sans-serif;
+}
+
+h1,h2,h3,h4,p {
+  margin: 0;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+ul,
+ul li {
+  box-sizing: border-box;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: rgb(24, 139, 233);
+}
+
+header {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 16px;
+  width: 100%;
+  background: rgb(240,240,240);
+  color: rgb(50,50,50);
+}
+
+header h1 a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+article {
+  box-sizing: border-box;
+  color: rgb(50,50,50);
+  padding: 16px;
+  background: rgb(255,255,255);
+}
+
+article p,
+article ul {
+  margin-bottom: .5em;
+  letter-spacing: 1px;
+}
+
+article ul li:before {
+  content: "-";
+  margin-right: 8px;
+  color: rgb(100,100,100);
+}
+
+article hr {
+  border: transparent solid 0;
+  background: rgb(240,240,240);
+  width: 100%;
+  height: 1px;
+  margin: 16px 0 16px 0;
+  display: block;
+}
+
+.p-members article ul li:before {
+  content: "";
+}
+
+.p-members article > ul > li {
+  border-bottom: rgb(240,240,240) solid 1px;
+}
+
+.p-members article ul li profile-card ul li.what:before {
+  content: "WHO";
+}
+
+.p-members article ul li profile-card ul li.twitter:before {
+  content: "TWITTER"
+}
+
+footer {
+  box-sizing: border-box;
+  color: rgb(50,50,50);
+  background: rgb(240,240,240);
+  text-align: center;
+  padding: 40vh 0 60vh 0;
+}
+
+
+/***p-prot***/
+
+.p-prot article {
+  width: 320px;
+  margin: 0 auto;
+}
+
+.p-prot form * {
+  vertical-align: bottom;
+  -webkit-appearance: none;
+  appearance: none;
+  border-radius: 0;
+  border: transparent solid 0;
+  outline: none;
+}
+
+.p-prot form input[type=radio] {
+  width: 16px;
+  height: 16px;
+  background: none;
+  border: 2px solid rgb(0, 0, 0);
+}
+
+.p-prot form input:checked {
+  background: rgb(0, 0, 0);
+}
+
+.p-prot form label:nth-child(1) {
+  font-weight: bold;
+  letter-spacing: 2px;
+  margin-bottom: 4px;
+}
+
+.p-prot form > div > label:nth-child(1),
+.p-prot form .appName input,
+.p-prot form .submit input {
+  display: block;
+  width: 100%;
+}
+
+.p-prot form .form-part {
+  width: 100%;
+  margin-bottom: 16px;
+}
+
+.p-prot form .form-part input[type=text] {
+  border-bottom: solid 2px rgb(0, 0, 0);
+}
+
+.p-prot form .form-part input[type=submit] {
+  background: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+}

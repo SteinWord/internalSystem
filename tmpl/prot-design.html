@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="InternalApp">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" href="//queensya-design.appspot.com/typography-2.0.0.css">
+  <link rel="stylesheet" href="/css/index.css">
+  <link rel="stylesheet" href="/css/prot.css">
+  <script src="/bower_components/angularjs/angular.min.js"></script>
+  <title>TEST</title>
+</head>
+<body class="p-prot">
+  <header>
+    <h1>
+      <a href="/">Internal</a>
+    </h1>
+  </header>
+  <article>
+    <form action="http://localhost:9000" method="post" name="form" ng-controller="AppController">
+      <div class="form-part appName">
+        <label for="appName" class="webType2">APP NAME</label>
+        <input type="text" name="appName" id="appName" placeholder="App Name" class="webType3">
+      </div>
+      <div class="form-part appType">
+        <label class="webType2">APP TYPE</label>
+        <input type="radio" name="appType" id="appTypeBeta" value="beta"><label for="appTypeBeta" class="webType3">Beta</label><br>
+        <input type="radio" name="appType" id="appTypePublic" value="public"><label for="appTypePublic" class="webType3">Public</label>
+      </div>
+      <div class="form-part submit">
+        <input type="submit" name="submit" value="RUN" class="webType3" ng-click="flash">
+      </div>
+    </form>
+	<p>{{.Result}}</p>
+  </article>
+  <footer>
+    <ul class="webType3">
+      <li>© Queensya 2015</li>
+      <li><a href="//queensya.com" target="_blank">Queensya</a></li>
+      <li><a href="//f.9en.co/?move=mainSns" target="_blank">@CreatorQsF</a></li>
+    </ul>
+  </footer>
+</body>
+</html>
+
+<!--
+株式会社img
+--->
