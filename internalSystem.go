@@ -42,7 +42,7 @@ func (n NewProject) Run() string {
 	if n.Type == "beta" {
 		n.Name = randURL(5) + "-" + n.Name
 	}
-	err := os.MkdirAll(_mkdirdir+"/"+n.Name+"/public_html", 0755)
+	err := os.MkdirAll(_mkdirdir+"/"+n.Name+"/public_html", 0775)
 	if err != nil {
 		panic(err)
 	}
